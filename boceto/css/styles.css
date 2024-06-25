@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3604,6 +3594,8 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 
+/*navbar */
+
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
@@ -3612,6 +3604,7 @@ textarea.form-control-lg {
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
+  
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
@@ -3726,6 +3719,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
@@ -3790,6 +3784,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -4148,6 +4143,27 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/*Header */
+
+.header {
+  height: 100px;
+  background-color:white;
+  width: 100%;
+  color: black;
+  font-size: 50px;
+}
+.header .htext{
+  color: black;
+}
+.header .hstext{
+  color: red;
+  font-size: 20px;
+}
+
+
+
+
+/*CARDS */
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -5996,6 +6012,80 @@ textarea.form-control-lg {
   vertical-align: var(--bs-spinner-vertical-align);
   border-radius: 50%;
   animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
+
+}
+
+/* contact us */
+#contact-us {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  
+}
+
+#contact-us .container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#map{
+  
+}
+#contact-us .contact-form {
+  background-color: #fff;
+  width: 100% ;
+  height: 450px;
+  
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us .contact-form form input,
+#contact-us .contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact-us .contact-form form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#contact-us .contact-form ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#contact-us .contact-form ul li {
+  margin: 0 10px;
+}
+
+#contact-us .contact-form ul li a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+#contact-us .contact-form ul li a:hover {
+  color: #5cb85c;
+}
+
+@media (max-width: 767px) {
+  #contact-us .contact-form,
+  #contact-us #map {
+      margin-bottom: 30px;
+  }
 }
 
 @keyframes spinner-border {
@@ -7782,8 +7872,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .pt-0 {
